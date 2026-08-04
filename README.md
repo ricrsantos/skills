@@ -1,65 +1,46 @@
-<p align="center">
-  <a href="#english">🇺🇸 English</a> |
-  <a href="#portugues-br">🇧🇷 Português</a>
-</p>
+[🇺🇸 English](#english) | [🇧🇷 Português](#portugues-br)
 
-<h1 align="center">Skills</h1>
+# Skills
 
-<p align="center">
-  A collection of <a href="https://cursor.com">Cursor</a> Agent Skills for improving AI-assisted development workflows.
-</p>
+A collection of Agent Skills for improving AI-assisted development workflows.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/platform-Cursor-blue" alt="Cursor">
-  <img src="https://img.shields.io/badge/format-Markdown-orange" alt="Markdown">
-  <img src="https://img.shields.io/badge/license-BSD--2--Clause-green" alt="BSD-2-Clause">
-</p>
+
 
 ---
 
-<a id="english"></a>
+
 
 # 🇺🇸 English
 
-This repository contains **Cursor Agent Skills** — markdown-based instruction sets that teach AI agents how to perform specialized tasks with higher quality and consistency.
+This repository contains **Agent Skills** — markdown-based instruction sets that teach AI agents how to perform specialized tasks with higher quality and consistency.
 
 Each skill lives in its own directory and includes a `SKILL.MD` file with YAML frontmatter, plus optional reference documents for deeper guidance.
 
 ---
 
+
+
 ## Available Skills
 
-| Skill | Description |
-|-------|-------------|
+
+| Skill                             | Description                                           |
+| --------------------------------- | ----------------------------------------------------- |
 | [go-engineering](#go-engineering) | Idiomatic Go code generation, review, and refactoring |
 
+
 ---
+
+
 
 ## Installation
 
-Skills can be installed globally (available in all projects) or per-project (shared with the team via the repository).
+The installation depends of you Harness, but in general, Skills can be installed globally (available in all projects) or per-project (shared with the team via the repository).
 
-### Global (recommended for personal use)
-
-Clone or copy the skill directory into your personal skills folder:
-
-```bash
-git clone https://github.com/ricrsantos/skills.git
-cp -r skills/go-engineering ~/.cursor/skills/
-```
-
-### Per-project
-
-Copy the skill into your project's `.cursor/skills/` directory:
-
-```bash
-mkdir -p .cursor/skills
-cp -r /path/to/skills/go-engineering .cursor/skills/
-```
-
-Once installed, Cursor automatically discovers skills and applies them when the task matches the skill's description.
+Once installed, your harness should be able to automatically discovers skills and applies them when the task matches the skill's description.
 
 ---
+
+
 
 ## go-engineering
 
@@ -76,6 +57,8 @@ Designed for implementation, code review, and refactoring tasks — **not** for 
 - Performance improvements
 - Test generation
 
+
+
 ### Engineering principles
 
 The skill teaches agents to prioritize:
@@ -90,6 +73,8 @@ The skill teaches agents to prioritize:
 8. Composition over unnecessary abstraction
 9. Idiomatic Go
 
+
+
 ### What the agent always follows
 
 - Produce idiomatic Go following Effective Go principles
@@ -100,6 +85,8 @@ The skill teaches agents to prioritize:
 - Keep packages focused on a single responsibility
 - Prefer standard library solutions first
 
+
+
 ### What the agent avoids
 
 - Using `panic` for normal error handling
@@ -108,22 +95,28 @@ The skill teaches agents to prioritize:
 - Large utility packages, reflection, or premature optimization
 - Deeply nested code and global mutable state
 
+
+
 ### Included documents
 
 The skill is composed of specialized reference documents. The agent loads only what is relevant to the current task:
 
-| Document | Focus |
-|----------|-------|
-| `effective-go.md` | Fundamental idiomatic Go principles |
-| `package-design.md` | Package organization and API design |
-| `error-handling.md` | Error wrapping, sentinel errors, and patterns |
-| `concurrency.md` | Goroutines, channels, and synchronization |
-| `testing.md` | Table-driven tests, mocks, and test structure |
-| `performance.md` | Profiling, allocations, and optimization |
-| `logging.md` | Structured logging and observability |
-| `security.md` | Input validation, secrets, and safe defaults |
-| `review-checklist.md` | Final review process before delivery |
-| `examples/examples.md` | Practical before/after code examples |
+
+| Document               | Focus                                         |
+| ---------------------- | --------------------------------------------- |
+| `effective-go.md`      | Fundamental idiomatic Go principles           |
+| `package-design.md`    | Package organization and API design           |
+| `error-handling.md`    | Error wrapping, sentinel errors, and patterns |
+| `concurrency.md`       | Goroutines, channels, and synchronization     |
+| `testing.md`           | Table-driven tests, mocks, and test structure |
+| `performance.md`       | Profiling, allocations, and optimization      |
+| `logging.md`           | Structured logging and observability          |
+| `security.md`          | Input validation, secrets, and safe defaults  |
+| `review-checklist.md`  | Final review process before delivery          |
+| `examples/examples.md` | Practical before/after code examples          |
+
+
+
 
 ### Skill metadata
 
@@ -138,6 +131,8 @@ author: ricrsantos
 ```
 
 ---
+
+
 
 ## Project Structure
 
@@ -162,6 +157,8 @@ author: ricrsantos
 
 ---
 
+
+
 ## Contributing
 
 Contributions are welcome.
@@ -173,55 +170,47 @@ Contributions are welcome.
 
 ---
 
+
+
 ## License
 
 BSD 2-Clause. See [LICENSE](LICENSE).
 
 ---
 
-<a id="portugues-br"></a>
+
 
 # 🇧🇷 Português (BR)
 
-Este repositório contém **Cursor Agent Skills** — conjuntos de instruções em markdown que ensinam agentes de IA a executar tarefas especializadas com maior qualidade e consistência.
+Este repositório contém  **Agent Skills** — conjuntos de instruções em markdown que ensinam agentes de IA a executar tarefas especializadas com maior qualidade e consistência.
 
 Cada skill fica em seu próprio diretório e inclui um arquivo `SKILL.MD` com frontmatter YAML, além de documentos de referência opcionais para orientação mais detalhada.
 
 ---
 
+
+
 ## Skills Disponíveis
 
-| Skill | Descrição |
-|-------|-----------|
+
+| Skill                               | Descrição                                              |
+| ----------------------------------- | ------------------------------------------------------ |
 | [go-engineering](#go-engineering-1) | Geração, revisão e refatoração de código Go idiomático |
 
+
 ---
+
+
 
 ## Instalação
 
-As skills podem ser instaladas globalmente (disponíveis em todos os projetos) ou por projeto (compartilhadas com a equipe via repositório).
+A instalação depende do seu Harness, porém de forma geral as skills podem ser instaladas globalmente (disponíveis em todos os projetos) ou por projeto (compartilhadas com a equipe via repositório).
 
-### Global (recomendado para uso pessoal)
-
-Clone ou copie o diretório da skill para a pasta pessoal de skills:
-
-```bash
-git clone https://github.com/ricrsantos/skills.git
-cp -r skills/go-engineering ~/.cursor/skills/
-```
-
-### Por projeto
-
-Copie a skill para o diretório `.cursor/skills/` do seu projeto:
-
-```bash
-mkdir -p .cursor/skills
-cp -r /caminho/para/skills/go-engineering .cursor/skills/
-```
-
-Após a instalação, o Cursor descobre as skills automaticamente e as aplica quando a tarefa corresponde à descrição da skill.
+Após a instalação, o seu Harness deve descobrir as skills automaticamente e as aplica quando a tarefa corresponde à descrição da skill.
 
 ---
+
+
 
 ## go-engineering
 
@@ -238,6 +227,8 @@ Projetada para implementação, revisão de código e refatoração — **não**
 - Melhorias de performance
 - Geração de testes
 
+
+
 ### Princípios de engenharia
 
 A skill ensina os agentes a priorizar:
@@ -252,6 +243,8 @@ A skill ensina os agentes a priorizar:
 8. Composição em vez de abstração desnecessária
 9. Go idiomático
 
+
+
 ### O que o agente sempre segue
 
 - Produzir Go idiomático seguindo os princípios do Effective Go
@@ -262,6 +255,8 @@ A skill ensina os agentes a priorizar:
 - Manter pacotes focados em uma única responsabilidade
 - Preferir soluções da biblioteca padrão
 
+
+
 ### O que o agente evita
 
 - Usar `panic` para tratamento normal de erros
@@ -270,22 +265,28 @@ A skill ensina os agentes a priorizar:
 - Pacotes utilitários grandes, reflection ou otimização prematura
 - Código profundamente aninhado e estado global mutável
 
+
+
 ### Documentos incluídos
 
 A skill é composta por documentos de referência especializados. O agente carrega apenas o que é relevante para a tarefa atual:
 
-| Documento | Foco |
-|-----------|------|
-| `effective-go.md` | Princípios fundamentais de Go idiomático |
-| `package-design.md` | Organização de pacotes e design de APIs |
-| `error-handling.md` | Encapsulamento de erros, sentinel errors e padrões |
-| `concurrency.md` | Goroutines, channels e sincronização |
-| `testing.md` | Testes table-driven, mocks e estrutura de testes |
-| `performance.md` | Profiling, alocações e otimização |
-| `logging.md` | Logging estruturado e observabilidade |
-| `security.md` | Validação de entrada, secrets e defaults seguros |
-| `review-checklist.md` | Processo de revisão final antes da entrega |
-| `examples/examples.md` | Exemplos práticos de código antes/depois |
+
+| Documento              | Foco                                               |
+| ---------------------- | -------------------------------------------------- |
+| `effective-go.md`      | Princípios fundamentais de Go idiomático           |
+| `package-design.md`    | Organização de pacotes e design de APIs            |
+| `error-handling.md`    | Encapsulamento de erros, sentinel errors e padrões |
+| `concurrency.md`       | Goroutines, channels e sincronização               |
+| `testing.md`           | Testes table-driven, mocks e estrutura de testes   |
+| `performance.md`       | Profiling, alocações e otimização                  |
+| `logging.md`           | Logging estruturado e observabilidade              |
+| `security.md`          | Validação de entrada, secrets e defaults seguros   |
+| `review-checklist.md`  | Processo de revisão final antes da entrega         |
+| `examples/examples.md` | Exemplos práticos de código antes/depois           |
+
+
+
 
 ### Metadados da skill
 
@@ -300,6 +301,8 @@ author: ricrsantos
 ```
 
 ---
+
+
 
 ## Estrutura do Projeto
 
@@ -324,6 +327,8 @@ author: ricrsantos
 
 ---
 
+
+
 ## Como Contribuir
 
 Contribuições são muito bem-vindas.
@@ -334,6 +339,8 @@ Contribuições são muito bem-vindas.
 4. Abra um Pull Request com uma descrição clara.
 
 ---
+
+
 
 ## Licença
 
